@@ -1,0 +1,60 @@
+.btn{
+    color: black;
+    text-decoration: none;
+    font-family: 微軟正黑體;
+    font-size: 20px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+/* hover 偽類選擇器 */
+.btn:hover{
+    color: rgb(243, 139, 158);
+}
+.btn:active{
+    color:rgb(144, 243, 169);
+}
+.btn::before{
+    content:"" ;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(230, 136, 172);
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    transition: width 0.4s;
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
+    -ms-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    
+}
+
+.btn::after{
+    content:"" ;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(230, 136, 172);
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: width 0.4s;
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
+    -ms-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.btn:hover::before{
+    width: 100%;
+}
+.btn:hover::after{
+    width: 100%;
+}

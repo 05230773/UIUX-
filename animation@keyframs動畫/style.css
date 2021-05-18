@@ -1,0 +1,75 @@
+*{
+    position: relative;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.wrapper{
+    height: 100%;
+    background-color: #ccc;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fcba03;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    /*animation-name:MoveRight;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    */animation:MoveRight 1s 2s both,TurnToPaper 1s 3s forwards;
+}
+
+.ball span{
+    font-family: 微軟正黑體;
+    font-size: 30px;
+    white-space: nowrap;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    animation: Text 1s 4s both ease-in;
+    -webkit-animation: Text 1s 4s both ease-in;
+}
+
+@keyframes Text{
+    0%{
+        opacity: 0;
+        position: absolute;
+    }
+    100%{
+        opacity: 1;
+        font-size: 40px;
+    }
+
+}
+@keyframes MoveRight{
+    0%{
+        left: 30%;
+    }
+    100%{
+        left: 70%;
+    }
+}
+
+@keyframes TurnToPaper{
+    0%{
+        width: 50px;
+        height: 50px;
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+        border-radius: 0;
+        background: #eb8f34;
+}
+}
