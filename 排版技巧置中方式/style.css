@@ -1,0 +1,35 @@
+.outter{
+    height: 300px;
+    border: 1px solid #000;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(72, 196, 245);
+}
+
+/* margin:0,auto;的置中方式 */
+.box1{
+    margin:0 auto;
+}
+
+/* inline-block,inline行內元素的置中方式 */
+.outter2{
+    text-align: center;
+}
+.outter2 .box{
+    display: inline-block;
+}
+
+/* flex的置中方式 */
+.outter3{
+    display: flex;
+    justify-content: center;
+}
+
+/* 文字置中方式 */
+.box5{
+    text-align: center;
+    line-height: 200px;
+}

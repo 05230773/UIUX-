@@ -174,12 +174,14 @@ html,body{
 }
 .picture h1{
 	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	line-height: 40px;
 	color: #333;
 }
 .picture h2{
 	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 	color: #333;

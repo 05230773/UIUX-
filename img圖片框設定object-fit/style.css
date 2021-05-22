@@ -1,0 +1,27 @@
+*{
+    position: relative;
+    box-sizing: border-box;
+}
+.imgBox{
+    width: 30%;
+}
+.imgBox-inner{
+    width: 100%;
+    padding-top: 75%;
+    border: 2px solid rgb(230, 10, 10);
+}
+.imgBox-fit{
+    border: 1px solid #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* display: block消除底下漏白 */
+.imgBox-fit .image{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: inherit;
+}

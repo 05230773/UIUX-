@@ -1,0 +1,15 @@
+.row{
+    background-color: rgb(247, 224, 224);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    height:300px;
+    width: 20%;
+    border: 2px solid #f35252;
+    background-color: rgb(228, 133, 133);
+    box-sizing: border-box;
+    padding: 0 8px;
+
+} 
